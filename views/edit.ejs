@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <form method="post" action="/user/<%=id%>/edit?_method=PATCH">
+        <h2>You Are Editing for UserId:<span style="color: dodgerblue; "><%=id%></span></h2>
+        <h3>Current Username: <span style="color: dodgerblue;"><%=username%></span></h3>
+        <form action="">
+            <input type="text" placeholder="Enter Your New UserName" name="username"><br><br>
+            <input type="password" placeholder="Enter Your Password " name="password"><br><br>
+            <button>Apply Edit</button>
+        </form>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete User Account</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form method="post" action="/user/<%=id%>/delete?_method=DELETE">
+        <h2>You Are Requesting for Deleting Account : UserId:<span style="color: dodgerblue; "><%=id%></span></h2>
+        <h3>Username: <span style="color: dodgerblue;"></span><%=username%></h3>
+        <form action="">
+            <input type="password" placeholder="Password for Confirmation" name="password"><br><br>
+            <button>Submit</button>
+        </form>
+    </form>
+</body>
+</html>

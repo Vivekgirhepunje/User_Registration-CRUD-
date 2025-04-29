@@ -1,0 +1,38 @@
+body{
+    background-color: bisque;
+}
+h2{
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    border :1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: lightblue;
+    transition: all linear 0.1s;
+}
+a:hover{
+    background-color: rgb(17, 116, 149);
+    color: white;
+}
+.elem{
+    margin-bottom: 5px;;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container label{
+    display: block;
+}
+.container button{
+    font-size: 17px;
+}
+.container input{
+    height: 30px;
+    font-size: 17px;
+}
